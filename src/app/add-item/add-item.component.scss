@@ -1,0 +1,19 @@
+.main-input {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px ;
+  justify-content: space-between;
+  align-items: center;
+  background-color: blanchedalmond;
+  box-sizing: border-box;
+  border-radius: 15px;
+  color: #fff;
+  width: 100%;
+  padding: .75rem;
+  font-size: 1.3rem;
+}
+
+.add-item {
+  display: flex;
+  column-gap: 10px;
+}

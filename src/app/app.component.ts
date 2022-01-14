@@ -6,5 +6,27 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'todo';
+  public isShowItems = true;
+  public items: string[] = ['dfgdfg','dfgfdgfdg','dfgdfgdf'];
+  public color = false;
+
+  public deleteItem(index: number) {
+    this.items.splice(index, 1);
+  }
+
+  public changeItem(newName: string, index: number) {
+    this.items[index] = newName;
+  }
+
+  public addItem(newItem: string) {
+    this.items.push(newItem);
+  }
+
+  public hideItems() {
+    this.isShowItems = !this.isShowItems;
+  }
+
+  selectColor() {
+    this.color = !this.color
+  }
 }

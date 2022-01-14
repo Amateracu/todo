@@ -1,0 +1,11 @@
+<div class="task" >
+  <div class="task-name">
+    <input *ngIf="itemChanging" [(ngModel)]="newName" type="text">
+    <div class="item-name" *ngIf="!itemChanging">{{itemName | capitalize}}</div>
+  </div>
+  <div class="buttons">
+    <button *ngIf="itemChanging" (click)="changeItem()">Сохранить</button>
+    <button *ngIf="!itemChanging" (click)="changingItem()">Изменить</button>
+    <button (click)="deleteItem()">Удолить</button>
+  </div>
+</div>

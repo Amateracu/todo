@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(193, 223, 220);
+  border-radius: 15px;
+  align-items: center;
+  padding: 10px;
+}
+
+.header-text {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.color-button {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
